@@ -32,7 +32,8 @@ public class Executable {
 
     public void run() {
 
-        cont.crearPersona1("Juan", 21);
+        System.out.println(cont.retornarNombreDePersona(cont.crearPersona1("Juan", 21)));
+
 
     }
 

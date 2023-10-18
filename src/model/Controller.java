@@ -4,9 +4,6 @@ import model.Persona;
 
 public class Controller {
 
-    private Persona persona1;
-    private Persona persona2;
-
     /**
      * Constructor de la clase Controller para inicializar 
      *
@@ -17,10 +14,15 @@ public class Controller {
         
     }
 
-    public void crearPersona1(String nombre, int edad) {
-        this.persona1 = new Persona(nombre, edad);
-        System.out.println(persona1.getNombre());
-    } 
+    public Persona crearPersona1(String nombre, int edad) {
+        Persona persona1;
+        persona1 = new Persona(nombre, edad);
+        return persona1;
+    }
+
+    public String retornarNombreDePersona(Persona persona) {
+        return persona.getNombre();
+    }
 
 
 }
