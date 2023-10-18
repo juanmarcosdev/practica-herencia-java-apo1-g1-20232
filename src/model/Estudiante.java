@@ -6,7 +6,8 @@ public class Estudiante extends Persona {
     private String carrera;
 
     public Estudiante(String nombre, int edad, String codigoEstudiante, String carrera) {
-        super(nombre, edad);
+        super(nombre,edad);
+
 
         this.codigoEstudiante = codigoEstudiante;
         this.carrera = carrera;
@@ -27,4 +28,9 @@ public class Estudiante extends Persona {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
+
+    @Override
+    public String presentarse() {
+        return "Hola Me llamo " + this.getNombre() + " y tengo " + this.getEdad() + " anhos, mi codigo es " + this.codigoEstudiante + " y estudio " + this.carrera;
+     }
 }

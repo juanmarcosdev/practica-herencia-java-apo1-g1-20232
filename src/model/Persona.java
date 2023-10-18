@@ -6,6 +6,14 @@ public class Persona {
 	 private String nombre;
 	 private int edad;
 
+	 public Persona() {
+
+	 }
+
+	 public Persona(String nombre) {
+	 	this.nombre = nombre;
+	 }
+
 	 public Persona(String nombre, int edad) {
 	 	this.nombre = nombre;
 	 	this.edad = edad;
@@ -25,6 +33,10 @@ public class Persona {
 
 	 public void setEdad(int edad) {
 	 	this.edad = edad;
+	 }
+
+	 public String presentarse() {
+	 	return "Hola Me llamo " + this.nombre + " y tengo " + this.edad + " anhos";
 	 }
 
 }

@@ -32,10 +32,11 @@ public class Executable {
 
     public void run() {
 
-        System.out.println(cont.retornarNombreDePersona(cont.crearPersona1("Juan", 21)));
-        System.out.println(cont.retornarNombreDePersona(cont.crearEstudiante1("Alejandro Molina", 18, "A00401651", "Ing Telematica")));
-
-
+        //System.out.println(cont.retornarNombreDePersona(cont.crearPersona1("Juan", 21)));
+        //System.out.println(cont.retornarNombreDePersona(cont.crearEstudiante1("Alejandro Molina", 18, "A00401651", "Ing Telematica")));
+        //System.out.println(cont.retornarCodigoDeEstudiante(cont.crearEstudiante1("Alejandro Molina", 18, "A00401651", "Ing Telematica")));
+        System.out.println(cont.recibirPresentacion(cont.crearPersona1("Juan", 21)));
+        System.out.println(cont.recibirPresentacion(cont.crearEstudiante1("Alejandro Molina", 18, "A00401651", "Ing Telematica")));
     }
 
     /**

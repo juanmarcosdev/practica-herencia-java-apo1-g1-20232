@@ -31,5 +31,13 @@ public class Controller {
         return estudiante1;
     }
 
+    public String retornarCodigoDeEstudiante(Estudiante estudiante) {
+        return estudiante.getCodigoEstudiante();
+    }
+
+    public String recibirPresentacion(Persona persona) {
+        return persona.presentarse();
+    }
+
 
 }
