@@ -1,6 +1,7 @@
 package model;
 
 import model.Persona;
+import model.Estudiante;
 
 public class Controller {
 
@@ -22,6 +23,12 @@ public class Controller {
 
     public String retornarNombreDePersona(Persona persona) {
         return persona.getNombre();
+    }
+
+    public Estudiante crearEstudiante1(String nombre, int edad, String codigoEstudiante, String carrera) {
+        Estudiante estudiante1;
+        estudiante1 = new Estudiante(nombre, edad, codigoEstudiante, carrera);
+        return estudiante1;
     }
 
 

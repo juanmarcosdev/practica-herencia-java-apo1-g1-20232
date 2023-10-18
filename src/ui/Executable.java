@@ -33,6 +33,7 @@ public class Executable {
     public void run() {
 
         System.out.println(cont.retornarNombreDePersona(cont.crearPersona1("Juan", 21)));
+        System.out.println(cont.retornarNombreDePersona(cont.crearEstudiante1("Alejandro Molina", 18, "A00401651", "Ing Telematica")));
 
 
     }

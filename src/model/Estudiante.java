@@ -2,21 +2,21 @@ package model;
 
 public class Estudiante extends Persona {
 
-    private int codigoEstudiante;
+    private String codigoEstudiante;
     private String carrera;
 
-    public Estudiante(String nombre, int edad, int codigoEstudiante, String carrera) {
+    public Estudiante(String nombre, int edad, String codigoEstudiante, String carrera) {
         super(nombre, edad);
 
         this.codigoEstudiante = codigoEstudiante;
         this.carrera = carrera;
     }
 
-    public int getCodigoEstudiante() {
+    public String getCodigoEstudiante() {
         return this.codigoEstudiante;
     }
 
-    public void setCodigoEstudiante(int codigoEstudiante) {
+    public void setCodigoEstudiante(String codigoEstudiante) {
         this.codigoEstudiante = codigoEstudiante;
     }
 
